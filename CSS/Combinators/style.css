@@ -1,0 +1,45 @@
+
+
+
+/* section p{
+
+color: red;
+
+} */
+
+section > p{
+
+    background-color: green;
+
+}
+
+
+ main > div{
+
+    width: 150px;
+    height: 200px;
+    border: 5px solid black;
+    display: inline-block;
+}
+
+
+.container .box ~ .box
+{
+
+    background-color: red;
+    margin-left: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
