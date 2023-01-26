@@ -1,4 +1,5 @@
 
+/* Desendant Combinator */
 
 
 /* section p{
@@ -6,6 +7,10 @@
 color: red;
 
 } */
+
+
+
+/* Child Combinator */
 
 section > p{
 
@@ -24,6 +29,16 @@ section > p{
 
 
 .container .box ~ .box
+{
+
+    background-color: red;
+    margin-left: 20px;
+
+
+
+}
+
+.container-2 .box + .box
 {
 
     background-color: red;

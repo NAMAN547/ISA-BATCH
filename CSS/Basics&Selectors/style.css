@@ -1,4 +1,4 @@
-
+/* Universal selector */
 *{
 
     margin: 0;
@@ -8,6 +8,8 @@
 
 }
 
+
+/* Element Selector */
 main{
     border: 3px dotted black;
 }
@@ -30,13 +32,15 @@ a{
 
 }
 
+/* I.D Selector */
+
 #color{
 
     color: blue;
-
-
-
 }
+
+
+/* Class Slector */
 
 .div-color p{
 
@@ -83,6 +87,7 @@ footer{
     padding: 15px;
 }
 
+/* Attribute Selector */
 
 input[type="text"]{
 

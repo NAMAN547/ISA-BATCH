@@ -5,8 +5,9 @@ section{
     min-height: 80vh;
     width: 90vw;
     border: 4px solid black;
-    background-color: crimson;
+    background-color: rgb(182, 44, 72);
     margin: 100px auto;
+    color:rgb(36, 34, 34);
 
 }
 
@@ -14,6 +15,7 @@ h1{
 
     font-size: 3.5em;
     color: aliceblue;
+    text-align: center;
 
 }
 
@@ -36,7 +38,27 @@ h1{
     }
 } */
 
-@media screen and (orientation: portrait){
+
+@media (450px <= width <= 768px) {
+
+    h1{
+
+        font-size: 2em;
+    }
+    p{
+
+        color: purple;
+    }
+
+    section{
+
+        background-color: black;
+        color: white;
+        
+    }
+}
+
+/* @media screen and (orientation: portrait){
 
     h1{
         font-size: 1.5em;
@@ -51,4 +73,4 @@ h1{
 
 
 
-}
+} */

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#caf0f8 ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    font-size:13px;
+}
+
+.testimonials{
+
+    max-width: 1400px;
+    margin: 100px auto;
+    /* height: 100vh; */
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.card{
+    background-color: #fff;
+    padding:30px;
+    margin-top: 10px;
+    box-shadow: 0px 40px 100px rgb(17, 12, 46, 0.3) ;
+    border-radius: 15px;
+
+
+}
+.card_header{
+
+    display: flex;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.card_header h3{
+    font-size: 18px;
+
+}
+
+.card_header p{
+
+    opacity: 50%;
+}
+
+
+
+.card_header > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    margin-right: 10px;
+
+}
+
+.card_lead{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+
+}
+
+.card_quote{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 70%;
+
+}
+
+.card-purple{
+
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    /* background-image: url('https://plus.unsplash.com/premium_photo-1661374876363-8a0f8b13d6e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHF1b3RhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px; */
+
+
+}
+
+.card-grey{
+    
+    background-color:#415a77;
+    color: white;
+
+
+
+}
+
+.card-blue{
+
+    background-color: hsl(215, 20%, 30%);
+    color: white;
+}
+
+.card:nth-of-type(1){
+
+    grid-column: 1/3;
+}
+
+.card:nth-of-type(3){
+
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+
+.card:nth-of-type(5){
+
+    grid-column: 2 / 4;
+
+
+}

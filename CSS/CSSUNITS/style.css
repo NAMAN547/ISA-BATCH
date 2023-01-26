@@ -1,41 +1,30 @@
-
-
 section{
+    width: 800px;
+    height: 160px;
+    border: 3px solid black;
+}
+
+section div{
+    width: 40%;
+    height: 60%;
+    background-color: red;
+}
 
 
-    width: 70vw;
-    height: 100vh;
-    border: 4px solid black;
-    background-color: bisque;
+article{
+    font-size: 20px;
 }
 
 
 
-
-div{
-
-    width: 60%;
-    height: 70%;
-    border: 4px solid black;
-    display: inline-block;
-    margin: 20px;
-
-
+ul{
+    /* font-size: 2em; */
+    font-size: 2rem;
 }
 
-ol {
-
-    font-size: 16px;
+section:nth-of-type(2){
+    border: 2px solid black;
+    background-color: lightgreen;
+    height: 40vh; /* vh -> with respect to view height(viewport)*/
+    width: 60vw;  /* vw -> with respect to view width(viewport)*/
 }
-
-ol > li{
-
-    font-size: 2em;
-}
-
-ul > li {
-
-    font-size: 3rem;
-}
-
-

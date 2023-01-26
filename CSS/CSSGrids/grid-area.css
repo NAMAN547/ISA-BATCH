@@ -1,0 +1,64 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-size: 16px;
+    height:100vh;
+    background-color: steelblue;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer'
+    ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 1fr 70px ;
+
+
+}
+
+
+header,
+main,
+footer,
+aside,
+nav {
+
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid skyblue;
+
+}
+
+header{
+
+    grid-area: header;
+}
+
+main{
+
+    grid-area: content;
+}
+
+nav{
+
+    grid-area: nav;
+
+
+}
+
+aside{
+
+
+    grid-area: sidebar;
+}
+
+footer{
+
+    grid-area: footer;
+}
