@@ -1,0 +1,26 @@
+
+section{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 15px solid black;
+    border-top: 15px solid green;
+    border-right: 15px solid blueviolet;
+    border-bottom: 15px solid rgb(143, 74, 74);
+    border-left: 15px solid rgb(103, 103, 39);
+    margin: 40px auto;
+   
+
+    animation: 700ms infinite linear loader; 
+
+}
+
+@keyframes loader{
+
+    100%{
+
+        transform: rotate(1turn);
+    }
+
+}
