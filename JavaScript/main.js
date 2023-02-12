@@ -150,9 +150,9 @@ console.log(n, typeof n);
 
 //Boolean
 
-let isNumberGreater = -4 > 2;
+// let isNumberGreater = -4 > 2;
 
-console.log(isNumberGreater);
+// console.log(isNumberGreater);
 
 
 
@@ -187,3 +187,242 @@ console.log(isNumberGreater);
 // let isGood = confirm("is kl rahul a good batsman?");
 
 // alert(isGood)
+
+
+// Lecture 2
+
+
+// let age = prompt("please enter your age?", 30);
+
+// console.log(age, typeof age)
+
+
+// let realAge = Number(age);
+
+// console.log(realAge, typeof realAge);
+
+
+
+// let x, y , z;
+
+
+// x = String(3.14);
+// console.log(x, typeof x);
+
+
+
+//  y = Boolean(1);
+//  console.log(y, typeof y)
+
+
+// function print(){
+
+//     let password = document.getElementById("userinput").value;
+
+//     console.log(+password, typeof +password);
+
+//     // let c = Number(password);
+
+//     // console.log(c, typeof c);
+
+// }
+
+
+// Basic Operators and math operations
+
+// let x = 1;
+
+// x = -x;
+
+// console.log(x)
+
+
+// let  z = 2, y = 5;
+
+// console.log( z + y);
+
+
+
+// string concatenation
+
+// let str1 = "first string";
+
+// let str2 = 2;
+
+// let str3 = str1 + " "+ str2;
+
+// console.log( str3 , typeof str3);
+
+
+// alert( 34 + 56 + "1");
+
+// alert( '1' + 2 + 4);
+
+// alert( 6 * '2');
+
+
+// alert(+"");
+// alert(+true);
+// alert(+null);
+
+
+// Assignment operator
+
+// let x = 1;
+// let y = 2;
+
+// let z = 5 - (x = y +3);
+
+// console.log(x);
+// console.log(y);
+// console.log(z);
+
+
+
+// Increment Operator
+
+
+// let counter = 0;
+
+// ++counter;
+// counter++;
+
+// alert(counter);
+
+// alert(counter++);
+// alert(++counter);
+
+
+//  Comparison operator
+
+
+// console.log( 2 > 1);
+// console.log( 'Z' > 'T');
+// console.log( "JOHN" > "HARY");
+// console.log("CITY" > "CIT")
+// console.log("A" > "a");
+
+
+// alert( "2" === 2)
+
+// console.log( null === undefined);
+
+// console.log( null == undefined);
+
+// console.log(null > 0);
+// console.log(null < 0);
+
+// console.log(null == 0);
+
+// console.log( null >= 0);
+// console.log(null <= 0);
+
+// alert(undefined == null);
+
+
+// If statements
+
+
+
+// let age = prompt("enter you age", 30);
+
+// if( ){
+
+//     console.log("you are underage")
+
+
+// }else{
+
+//     console.log("you are an adult")
+// }
+
+
+// let sum = 0;
+
+// while(true){
+
+//     let value = prompt("enter the values", '');
+
+
+//     if(!value) break;
+
+//     sum += Number(value);
+// }
+
+// alert(sum);
+
+
+
+// for(let i = 0; i < 3; i++){
+
+//     console.log(i);
+
+
+// }
+
+
+// Functions
+
+
+// function declaration
+
+
+
+// print(2,3);
+
+// function print(a,b){
+
+//     console.log( a+ b);
+
+//     return
+
+
+// }
+
+
+
+
+
+// function expression
+
+
+
+// print(2,3);
+
+// let print = function (a,b){
+
+//     console.log( a + b)
+
+
+
+// }
+
+
+// Arrow function 
+
+// 1. Makes syntax easy and clear
+
+
+// let print = (a,b,c) => expression ; 
+
+
+
+// let multiply = n => {
+
+//     console.log("hello world");
+
+//     return n *3;
+// }
+
+// console.log(multiply(3));
+
+
+
+
+
+
+
+
+
+
+
