@@ -157,6 +157,215 @@ console.log(fruits.unshift("newFruit", "newfruit2"));
 // })
 
 
+// Arrays Methods
+
+
+
+let numbers = [ 1, 2, 3, 4, 5, 6,10,13, 7,9 ];
+
+//  delete numbers[2];
+
+//  console.log(numbers);
+
+ 
+//  numbers.splice(3, 4 );
+
+//  console.log(numbers);
+
+
+// let newArr = numbers.slice(0, 4)
+
+// console.log(numbers)
+
+// console.log(newArr);
+
+
+
+
+// console.log(numbers.concat([8,9,10], [11,12,113]))
+
+// console.log(numbers)
+
+
+// console.log(numbers.indexOf(10));
+
+// console.log(numbers.includes(3));
+
+let users = [
+
+    {
+
+        name:"naman",
+        age: "26",
+        id: 0
+    },
+
+    {
+
+        name:"sabeel",
+        age: "27",
+        id: 1
+    },
+
+    {
+
+        name:"kartik",
+        age: "28",
+        id: 2
+    }
+
+]
+
+// console.log(users.filter((item)=> item.id < 2));
+
+// console.log(users);
+
+
+console.log(numbers.map( x => x*2))
+
+console.log(numbers);
+
+// let newArr = [
+
+//     [1,2,3,4],
+//     [5,6,7,8],
+//     [9,10,11,12]
+
+// ]
+
+// console.log(newArr[1][1])
+
+
+// console.log(numbers.sort((a,b)=> b -a));
+
+
+// let str = " I love coding blocks";
+
+// console.log(str.split(" ").join("$"));
+
+
+
+// let number = [1,2,3,4,5,6,7];
+// console.log(number.reduce((sum,element)=> sum + element,0 ));
+
+
+
+// // Objects
+
+// // let person = new Object();
+
+// let person  = {
+
+//     name: "naman",
+//     2: " this is string",
+
+//     "age": 24,
+//     "this is a key": true,
+
+//     fun: function(){
+
+//         console.log("hello world");
+
+//     },
+
+//     colors: [ "red", "blue", "green"]
+// };
+
+
+// // console.log(person["this is a key"]);
+
+// // console.log(person.colors[1]);
+
+// // console.log(Object.keys(person));
+
+// // console.log(Object.values
+// //     // (person));
+
+    
+//     // for(let key in person){
+
+//     //     console.log(person[key])
+//     // }
+
+
+//     person.address = "new delhi";
+
+//     console.log(person);
+
+//     person.address = "chandigarh";
+
+
+
+let person1 = {
+
+    name: "sabeel",
+
+    age : 25
+}
+
+
+
+let person2 = person1; // copied by reference
+
+delete person1.name;
+
+person2.address = "new delhi"
+
+console.log(person1);
+
+console.log(person2);
+
+console.log(  person1 === person2)
+
+console.log(person1 = null);
+
+console.log(person1)
+
+console.log(person2);
+
+let a = {};
+
+let b = {};
+
+console.log( a === b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
