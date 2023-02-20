@@ -51,17 +51,58 @@
 
 
 
-function Person(name, age){
+// function Person(name, age){
 
-    this.name = "Kartik";
+//     this.name = "Kartik";
 
-    return "return this";
-};
+//     return "return this";
+// };
 
 
 
- console.log(new Person().name)
+//  console.log(new Person().name)
 
- const p2 = new Person("Naman", 30);
+//  const p2 = new Person("Naman", 30);
+
+
+
+// explicit binding
+
+
+
+
+
+const p1 = {
+
+    name: "Sabeel",
+    age: 30
+}
+
+
+const p2 = {
+
+    name: "abhishek",
+    age:22,
+    address: "new delhi",
+    printInfo: function(){
+
+        console.log(this)
+    }
+}
+
+
+// console.log(p2.printInfo())
+
+// console.log(p2.printInfo.call(p1));
+
+
+// let f1 = p2.printInfo.bind(p1);
+
+// // console.log(f1())
+
+
+
+
+
 
 
