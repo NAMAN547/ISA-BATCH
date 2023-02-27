@@ -70,82 +70,205 @@
 // console.log(listItem);
 
 
-// for(let i = 0; i< listItem.length; i++){
+// // for(let i = 0; i< listItem.length; i++){
 
-//     listItem[i].style.backgroundColor = "grey"
-
-// }
-
-// let userInput = document.getElementsByTagName("input");
-
-// console.log(userInput);
-
-
-/*** QuerySelector ****/
-
-// let targetElement = document.querySelector("#special");
-
-// console.log(targetElement.children[0].children)
-
-// // targetElement.style.backgroundColor = "green"
-
-// // for(let i = 0; i< targetElement.length;i++){
-
-// //     targetElement[i].style.backgroundColor = "yellow"
-
+// //     listItem[i].style.backgroundColor = "grey"
 
 // // }
 
+// // let userInput = document.getElementsByTagName("input");
+
+// // console.log(userInput);
 
 
-// Traversing Elements
+// /*** QuerySelector ****/
+
+// // let targetElement = document.querySelector("#special");
+
+// // console.log(targetElement.children[0].children)
+
+// // // targetElement.style.backgroundColor = "green"
+
+// // // for(let i = 0; i< targetElement.length;i++){
+
+// // //     targetElement[i].style.backgroundColor = "yellow"
 
 
-// children and childNodes
-
-let list = document.getElementsByClassName("list-group");
-
-// console.log(list[0].childNodes);
-
-
-// console.log(list[0].parentNode.parentNode.parentNode.parentNode.parentNode);
-
-
-// console.log(list[0].firstChild)
-
-
-// let item = document.querySelector("li");
-
-// console.log(item);
-
-// console.log(item.nextElementSibling)
+// // // }
 
 
 
-// Creating a New Element
+// // Traversing Elements
 
-let newHeading = document.createElement("h2")
+
+// // children and childNodes
+
+// let list = document.getElementsByClassName("list-group");
+
+// // console.log(list[0].childNodes);
+
+
+// // console.log(list[0].parentNode.parentNode.parentNode.parentNode.parentNode);
+
+
+// // console.log(list[0].firstChild)
+
+
+// // let item = document.querySelector("li");
+
+// // console.log(item);
+
+// // console.log(item.nextElementSibling)
+
+
+
+// // Creating a New Element
+
+// let newHeading = document.createElement("h2")
+
+// // console.log(newHeading);
+
+// let addedText = document.createTextNode("This is a new heading")
+
+
+// console.log(addedText);
+
+// newHeading.appendChild(addedText);
 
 // console.log(newHeading);
 
-let addedText = document.createTextNode("This is a new heading")
+// let heading = document.getElementById("target");
+// console.log(heading)
+
+// let parentDiv = document.getElementById("main");
 
 
-console.log(addedText);
+// parentDiv.insertBefore(newHeading,heading);
 
-newHeading.appendChild(addedText);
-
-console.log(newHeading);
-
-let heading = document.getElementById("target");
-console.log(heading)
-
-let parentDiv = document.getElementById("main");
+// newHeading.style.color = "red";
 
 
-parentDiv.insertBefore(newHeading,heading);
 
-newHeading.style.color = "red";
+//Events
+
+
+// let selectElement = document.getElementsByTagName("select");
+
+// console.log(selectElement)
+
+
+// function listenEvent(x){
+
+//    document.body.style.backgroundColor = x
+
+// }
+
+
+
+
+let btn = document.getElementById("main-button");
+
+
+btn.addEventListener("click", addEvent)
+
+
+function addEvent(e){
+
+
+
+    // let heading = document.getElementById("header-title");
+
+    // // console.log(heading)
+
+    // heading.innerText = "Changed Heading"
+
+
+    console.log(e);
+
+    // console.log(e.target)
+
+    // console.log(e.clientX);
+    // console.log(e.clientY);
+
+    // console.log(e.offsetX)
+    // console.log(e.offsetY)
+
+     console.log(e.ctrlKey);
+     console.log(e.altKey);
+
+     console.log(e.value)
+
+}
+
+
+let inputElement = document.getElementById("item");
+
+// console.log(inputElement)
+
+inputElement.addEventListener("keypress",(e)=>{
+
+    console.log(e.target.value)
+
+
+})
+
+// let newDiv = document.getElementById("special-div");
+
+
+
+// newDiv.addEventListener("mousemove", newEvent);
+
+// // newDiv.addEventListener("mouseout", newEvent);
+
+
+// function newEvent(e){
+
+//     console.log(e)
+
+
+//     console.log("Event Name:"+ " " + e.type);
+
+//     console.log("X-Cordinate:" + e.offsetX + "Y-Cordinate:" + e.offsetY )
+// }
+
+
+
+// let newDiv = document.getElementById("special-div");
+
+
+// FORM EVENTS
+
+let form = document.querySelector("#addForm")
+
+// console.log(form)
+
+form.addEventListener("submit", newEvent);
+
+
+function newEvent(e){
+
+    e.preventDefault();
+
+    // console.log(e);
+
+    console.log("Event Name:"+ " " + e.type);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
