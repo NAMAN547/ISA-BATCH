@@ -3,6 +3,9 @@ let form = document.getElementById("addForm");
 
 let itemList = document.getElementById("items");
 
+let filterSearch = document.getElementById("filter");
+
+
 // let removeBtn = document.getElementsByClassName("delete")
 // console.log(removeBtn);
 
@@ -32,6 +35,8 @@ let itemList = document.getElementById("items");
 form.addEventListener("submit", addItem)
 
 itemList.addEventListener("click", removeItem)
+
+filterSearch.addEventListener("keyup", filterItem)
 
 
 
@@ -82,5 +87,99 @@ function removeItem(e){
 
         }
     }
-
 }
+
+
+
+//Items kaise filter kre
+
+function filterItem(e){
+
+    let text = e.target.value.toLowerCase();
+
+    let items = document.getElementsByTagName("li");
+
+
+    Array.from(items).forEach((item)=>{
+
+        let itemText = item.firstChild.textContent;
+
+        if(itemText.toLowerCase().indexOf(text) != -1){
+
+            item.style.display = 'block';
+
+          
+        }
+        else{
+
+            item.style.display = 'none';
+        }
+    })
+}
+
+
+
+
+/********* Theme Changer ********/
+
+
+
+const themeColor = document.querySelectorAll("input[name='theme']");
+
+ const themeColorsArr = Array.from(themeColor);
+
+
+ // storeTheme
+
+
+ function storeTheme(themeColor){
+
+   localStorage.setItem("theme", themeColor )
+
+
+ }
+
+ // applyTheme
+
+ function applyTheme(){0
+
+    let selectedTheme = localStorage.getItem("theme");
+
+    themeColorsArr.forEach((themeOption)=>{
+
+        if(selectedTheme === themeOption.id){
+
+            themeOption.checked = true;
+    
+        }
+    })
+ }
+
+
+ themeColorsArr.forEach((themeOption)=>{
+
+
+    themeOption.addEventListener("click", ()=>{
+
+        // console.log(themeOption)
+
+        // console.log(themeOption.id)
+
+        storeTheme(themeOption.id);
+
+    })
+ })
+
+ document.onload = applyTheme();
+
+
+
+
+
+
+
+
+
+
+
+

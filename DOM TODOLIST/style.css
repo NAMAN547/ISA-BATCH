@@ -1,0 +1,125 @@
+
+
+:root{
+
+    --clr-body-bg: #ffffff;
+}
+
+body{
+
+
+    background-color: var(--clr-body-bg);
+}
+
+
+.color-picker > fieldset{
+
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    border: 2px solid black;
+    gap: 20px;
+    font-size: 30px;
+    width: fit-content;
+    padding: 10px;
+    border-top: 2px solid black;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #fff;
+
+
+}
+
+
+input[type="radio"]{
+
+    appearance: none;
+
+    width: 2rem;
+    height: 2rem;
+
+    outline-offset:3px;
+    outline: 3px solid var(--radio-color,currentColor);
+    border-radius: 50% ;
+
+}
+
+
+
+#dark{
+
+    --radio-color:#050a44;
+
+}
+
+
+#yellow{
+
+    --radio-color:#e0d375;
+
+}
+
+#grey{
+
+    --radio-color:#a4a999;
+
+}
+
+#blue{
+
+    --radio-color:#0e15eb;
+
+}
+
+#light{
+
+    --radio-color:#dfe0ff;
+
+}
+
+input[type="radio"]:checked{
+
+    background-color: var(--radio-color);
+
+}
+
+
+
+
+:root:has(#light:checked){
+
+    --clr-body-bg: #dfe0ff;
+}
+
+:root:has(#blue:checked){
+
+    --clr-body-bg: #68c0db;
+}
+
+:root:has(#dark:checked){
+
+    --clr-body-bg: #2b3177;
+}
+
+:root:has(#yellow:checked){
+
+    --clr-body-bg: #ecdc2e;
+}
+
+
+:root:has(#grey:checked){
+
+    --clr-body-bg:#a6a69b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
