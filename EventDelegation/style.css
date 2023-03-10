@@ -1,0 +1,37 @@
+
+
+#great-grandparent{
+
+    width: 80vw;
+    border: 2px solid black;
+    height: 60vh;
+    margin: 100px auto;
+}
+
+#grandparent{
+
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    margin: 30px auto;
+}
+
+
+#parent{
+
+
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    margin: 20px auto;
+
+}
+
+#inner-child{
+
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    margin: 10px auto;
+
+}

@@ -1,6 +1,11 @@
 const URL = "https://www.fishwatch.gov/api/species"
 
-fetch(URL)
+fetch(URL , {
+
+  method: "GET"
+
+
+})
 .then((response)=>{
 
  // we get data in chunkd so we will first wait to get the entire data
