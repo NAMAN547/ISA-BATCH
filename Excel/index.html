@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title-bar"> Book-1 Excel </div>
+
+        <div class="menu-bar">
+
+            
+
+        <div class=" menu-file menu-bar-item ">File</div>
+        <div class="menu-home menu-bar-item selected">Home</div>
+        <div class=" menu-insert menu-bar-item">Insert</div>
+        <div class=" menu-layout menu-bar-item">Layout</div>
+        <div class="menu-help menu-bar-item">Help</div> 
+
+        
+        </div>
+
+        <div class="menu-icon-bar">
+
+        <div class=" material-icons menu-icon "> content_cut</div>
+        <div class="material-icons menu-icon">   content_copy  </div>
+        <div class="material-icons menu-icon">   content_paste  </div>
+
+        <select class="font-family-selector">
+
+            <option value="">Select</option>
+
+            <option  style="font-weight: bold; background-color: #EEEEEE">Serif Fonts</option>
+            <option value="Georgia,serif" style="font-family: Georgia,serif">Georgia</option>
+            <option value="Palatino Linotype,Book Antiqua,Palatino,serif" style="font-family: Palatino Linotype,Book Antiqua,Palatino,serif">Palatino Linotype</option>
+            <option selected="selected" value="Times New Roman,Times,serif" style="font-family: Times New Roman,Times,serif">Times New Roman</option>
+            <option disabled style="font-weight: bold; background-color: #EEEEEE">Sans-Serif Fonts</option>
+            <option value="Arial,Helvetica,sans-serif" style="font-family: Arial,Helvetica,sans-serif">Arial</option>
+            <option value="Arial Black,Gadget,sans-serif" style="font-family: Arial Black,Gadget,sans-serif">Arial Black</option>
+            <option value="Comic Sans MS,cursive,sans-serif" style="font-family: Comic Sans MS,cursive,sans-serif">Comic Sans MS</option>
+            <option value="Impact,Charcoal,sans-serif" style="font-family: Impact,Charcoal,sans-serif">Impact</option>
+            <option value="Lucida Sans Unicode,Lucida Grande,sans-serif" style="font-family: Lucida Sans Unicode,Lucida Grande,sans-serif">Lucida Sans Unicode</option>
+            <option value="Tahoma,Geneva,sans-serif" style="font-family: Tahoma,Geneva,sans-serif">Tahoma</option>
+            <option value="Trebuchet MS,Helvetica,sans-serif" style="font-family: Trebuchet MS,Helvetica,sans-serif">Trebuchet MS</option>
+            <option value="Verdana,Geneva,sans-serif" style="font-family: Verdana,Geneva,sans-serif">Verdana</option>
+            <option disabled style="font-weight: bold; background-color: #EEEEEE">Monospace Fonts</option>
+            <option value="Courier New,Courier,monospace" style="font-family: Courier New,Courier,monospace">Courier New</option>
+            <option value="Lucida Console,Monaco,monospace" style="font-family: Lucida Console,Monaco,monospace">Lucida Console</option>
+
+
+        </select>
+
+        <select class="font-size-selector">
+
+            <option value=" 8px">8</option>
+            <option value="10px">10</option>
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="18px">18</option>
+            <option value="20px">20</option>
+            <option value="24px">24</option>
+            <option value="26px">26</option>
+            <option value="32px">32</option>
+
+        </select>
+
+
+
+        <div class="material-icons menu-icon">   format_bold  </div>
+        <div class="material-icons menu-icon ">   format_italic  </div>
+        <div class="material-icons menu-icon ">   format_underline  </div>
+        <div class="material-icons menu-icon">   format_align_left  </div>
+        <div class="material-icons menu-icon">   format_align_center  </div>
+        <div class="material-icons menu-icon">   format_align_right  </div>
+        <div class="material-icons menu-icon">   format_color_fill  </div>
+        <div class="material-icons menu-icon">   format_color_text </div>
+    
+    </div>
+
+   
+    <div class="formula-bar">
+
+        <div class="formula-editor selected-cell"></div>
+        <div class="formula-editor sign ">
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAADbCAMAAABOUB36AAAAkFBMVEX///8AAADl5eXk5OTz8/Pm5ubr6+v6+vrj4+P4+Pjv7+/y8vL8/Pzp6enR0dFvb2/Z2dmsrKy7u7ufn5/c3NzExMTMzMyzs7OlpaWFhYVWVlZzc3MvLy+Xl5eNjY1NTU1jY2N7e3sMDAwbGxsmJiZAQEA2NjZcXFxpaWk8PDwWFhZHR0cpKSl/f38SEhIhISFbq+aXAAASLUlEQVR4nNVdiXKrOgx1wJjYGEr2pGnSpL3dbm/b//+7Z0wWFgHeaHie6TAqWFgBJB1ZlhFCKPQCD4sjCQL/N0lEkslss70T7bhbJRFmcV/3RbcRk2C6Oj6Myu17O+V9iumf/unl/+ydDMezlxHcdv3cF4VhSAkhmIeciSPvnURocd8go2xJ2MN9kef5RAiMfW+cvTHjvslw9tQmpGiTPu4bBIH8p3ibQ3H0eybXHTJmbdrDfT3PO8nuh1L2/sggXCgIKVrsfhiRaFi066EvMhw/qkk5enQ+qlzTer7US+Jt7o30ld7XU1u6HoYUs39D6ZHgsyjHw341aRFz43oYUsxxWfYeSFb6Kt/SKEYobRbz2fUwEGOECduJCSNUHEkvJNoVhZginp2lm2Y5seNh/IamDaK74pMak5PiZc1iLmPHw+jfbgas+Fn+xPH5bNRsX5ax42H4fu4zjP3cZ3BPxq9FAUhQOPvWKGbgehg9++oBKwGRhBbOekGTmNy16963mKQk5Y6VzpIGq/LH9TB6FtMrP8tH7Jcu9jDsGG2ci8k5pzGJsTgycXRMVsTwqxcTWNumyPGo+lVB9K40+l39YpoAUh7ca8I+DQrel4cfAhezaV1M9r8CYlUJ1gy6mNXU0LQHL4UxJvGKOJ4Orkg8rww/hC/mFS9hgpwOQ5JS0/biuvvoX3X4DRczr/AJP6S4BwQhxewFiOFt5WG2XBzN14fXn6d/9/ukxwBmH0+TrCpS7tsfffZUIxY6f6kuQIwxSql8k8XRFRnWDGLQz43UyN40bdUrf8O/F1v7NSCGahhrEf9upPQ3gJjPq1KO+oB4mkBMPNGTXgockbX4xxfr50aKpBTTOUKJaw9zEfRyo9sCsXpUAP+yXAAQC4NYPGKOWBwHyAVZD01+MTecTckeVFAU1bHy8vd1Tu9AbFmTcuSI85CAGKrP0r674WwJxMqukSUZVvGXaCvugrMFKTWtU9ed3dXFTIPeZmduBcSA2Ot3+MupOP0DMbKri3nsAylrAzG3X0FdytEk/PWPsToq15oWCkim/Oaa1rXdrIZGsoZvYCh7BmKAlG8y9nFbL0jG3uNTKF56gDYkB4LLoxlywNmOlJrWHRZAgNEcJTeAJP0CMeidHd1CLkhM74K1PUsS8NpHL04425FuVRD5AsTck5sEf3oEYhTKrpzGt7AgPQKxAAAno5Ef3MIfqAOxc4xaHEIrMoJSCb6RA862pFRBzpxkyAXaOuE8KCD2DxBz5YTzkIAYhj7NdBBP02GCLhTrEs5B/wnJCmnDDjVtDCDq0SO/jWrtD4ixAyDmPryNocxIvxcgBn6aU2rCKjhlYFqMijOWHYpALFucwrPFKbEFSeoTRJkG0mGVrxFbTifTZcwpMxyVYDHdv93f3x9XPiXcCogx8YNnv5mcrUAZooQSmUajkAIXnzzqCueA4PFke/EX73cJ1x2VIAlaFeLhhwRZADEyT5MkmYsmDul8ni6X0/UrIOXfyWS6SJaiXS8WfdN5xBGvgLhkV+Xwb60rJhtXMstkasdJTO21D5BE2o153jkhM0ZsVl0AmLcEexorMqrpc1l7FL+nmQryXEiZp/AJzuIwbV6Js1ZXQWwJrj97C80MCgW/Qt32Ln9+8UGmx9brdqoWBEN2O2uTGhDzVci2pRXqTWYq8vEMcoQro1QaFYfMdt7Ey01OqzZIvmpDhUSfjQw1WhohtGweWqHNWfeoOG9a+TqSOZ0GXjF1IaX4iav5bk3tp3tUXtymFY9STE2MEyuuT2xvbwjBuhVos65RcdL66r+WDEpFdTeRZGYvZKZBNV4K2jEq3v6BPyGs37iTT3MZaujrI4/aRoRavsusPRkBscVuL8sVbLfZ33vW3n4g9g/bO1nW4O58vJIHQo4aP0rQNircuiY9G4eZ3RS6DUnXSq6e4dmaPiCxIjftIWHFiy9kcH5n/71vJtPVarLetKzW3bHmUdUSlGvtvbhSPv+hzEgOTiskLX2DLNbwvl5K4QXyijNBph8NA30Km1k1eQXXtr7UPRDHDEyZkhG46DRq6cvTSUIx5aWzFDV9sAlrYNWybvDS0pOmPXn7nm9K1pdZjLKlXq19xQcDnG1Y1bkjMCs4BF5uH9jEbkJkBM2ebJEJK1jOBwz3jf52i7mUsJoLTz/3KCRaMCIppNInyIQVg9IXhMfnQReHXUp2lC2sGztSQUA69Cj7nsw4A6BRhrXrFzMFT+Uey8ieV46DGZExGKJlppwhZgfg4rjw4A8NtU42OHAmJuj/vWJTzuAzAi4m17P7LMhSN7yvKZO+RIZiOOcS1IhjbEZGUM7BhhlzhsRcourF9JqFvUGiL6Nsuil4os9fwnDLi12pIGhcK2POBMLt+7hyMb8CuS099Y0ZQ/NkstvtJkuGcJw79q5mxAgwrJFnzBnKbxTWLypdHF8t5gH5JVZIehrVGTFNIAaQoO9iwxmyT+PyxfgCpO8R7+CMnMw7hZAJeOPmnEOoHM2UFi/ml3t+hJ2c3dhNDP34O2LO2YdcuC9evHh8/vcTCbo5O5kRA/2zhU3BDQwEUH5Q8eJLvCBWWX3m4mkGoHs2VviRG0ko+3gk9Mz54mt4fanEmeaZtTjPuSChCcmhEN0zsuHMIWA35eeL+eWlnlEVzm407REY050lZ4Dl1/Xs+Z0+YCXOqNV+qZJQjHRmyRn46Z4vZ8/e4F+snkli7wUBUo4WlpyhoEB0OnuZFw+YGueqpvVMSDiDxIjVlYS094rkMa6zL7tmqpwdIBQKAYoHU7BzJikQ5/si8uzZ53rDypwdiMnfATG/bMWMAEfoh8qzZ5Koc47jWIIacZQYx4BsgCe2nCFHyBNnLyuaF0yZswMV5IFz14lvyTmEplgWQnmeLaqc5lLkjBS0cdcEGQhPsHU+ITT5sEckOkWsv5kGZymmnXtAIHjyGJliugsZA77VJ8JnfbcMNDgLIHZaTYVplCXY6pNgDHFPTViVyAhKp7p4eXuuw9mF6w69s1Pz6ZgrCcyyLU5e3o8mK3sgNq4PJqtT5SC9sCWTI9FkZf80wQwCwxejTDZPAm2oJivrcjUY+s3fqZNCOI1iIk1W1pp2TKFEiRkxjp4Vg1pNs/9LXVZIwei0k2DschG7SMsHQwgjCWUNUvqtvCAPnj3xzCPbVzIAectkP01WwvMMGOIIB3EQimOgTULztw+Im7CqkaCtGk2YNit7hALNnkh30xKhSOwD5br9mLCyFhPKlFk7EhNEslMzMXNjKo7ZP3VJBqZqLbkBK4gE4nvfZqwsFQU8e2IzudYVZWIGrBCyU/tgUs6Lu3VeQGAir5dlsEbMwogjSElsbCbXyiSgx/exPitbZw8OkHBT765WfBGIlLxyfVaWrnsAJnelnvF0TJWMAPbZs9JlZQfEagU9ZaO+ASuYjICPwqQAo93TBJME3phVlmOJhFJUNkSfVTaZy/K6vHlIQYsEk/t33IQVTHJAB/1B2qxsNS30zi5tVGuVhObBI31NC1kZdRLUQNTGUFZIcIJ4+ttADIInP2asYBJMYt+aADGLKYAISr8+qsf8u8imVVpcl5UVQhnTZ2AMM40ZnA4yhKUcJYEuKxsx4Y0+ktiZmMcGMWfEXEyvfI0CGYARRhoYsAJJOH9YtPtIm7ONooBQ7ydypYIi6JPI2+8CMWj+dkONWNVJBqXPn9pCM4teimlsxKERrKgRqzrEO38RL8C09QZpA7GQEkZweE4WUidZQwUAA1YAedGyMeCD/CA9zlauOzx7YrtASZI+PU8nrkGPcqzJ2QaIQfO395bI60Relu98CApQARNNzjZPE1q6tnPyNK9rhbL6mcBbc9DkbJE2DCbeL7BdBvIpbfjPid2Mi39COSWhFmcLTQvPcIw9U9VaIPE5lP8qSTCnJP4lIEagRO2n0Hq5GfGu6+oCeRbKKfkiBkDML7sQSiQBC5QRE1Zl8rpWaJefBVNy8FiDc77cJjytcwm5Bomg1UoTZMKqRF4t5h9+OgsZ6BRpcLZAKE0FymwgSUZeFXhKT2cjYEZ8/0sIBcQPZqyKZHQJFm4uZ6EA4rMWZ/MiVxA8eTRjVawSM7nKca15BX2cvua2L2ZwCS5QRmyDP1cHNg2uZ6Ewwp6qc0bqer5CwgXKYrtQHr1OJuxZ8SyQTf+A1DlLMdXqR1VqeYGxSxIYsCpsvXpdKS2zq69noei+r865UBBAVlfjqmQEfS5PyITVlaTXhxaExbNgwtceKXMuuu55kXlFEoQnB6zMimCZD0s9v3D2msu5JuW+kOV8wr7ymE2BGFicY9ZSUuNKCg8umR0+nkZ/7verMSb8fPa6uPaNVowCuNhOo46xaQ1MeO0JuMNmmfTYvOQl/tmn8mxAC6qbVfuCCV+fdKw6ZkPIBOV4CD8Td/cF1nr+3WU6oiBlQqt9MTyZQhXHnGtaA7gEBUgeuvsGEVza53VS2JRLlpOpRsDAbr0DsSNw06NCtqFCIcJ7aDkAmE02uuOeut00KeT7B7jpqrMvVaitMSJQ34b6ZjPmq4zZqAAdJnBGb8o6+sJ1GyptzMG+DZW/FkhlzEblBLEPF2ejHX2bhlpqWUlt8L4NtaGmVdUKjtnMboL6/Z157X2j7jpNwpVtum/D/vOjPY7B+8ZF0gyIsfpmhUJBxh19QRtfbm+48b5QipBsL+JjAe47Tf3y/psGBgW6Xdo5LdIp5UfLfXFzRbP3ZRBF2aNjeTE1spgJXYcrBkUfoYDzt519wcBusf2lLfclTW9t3vX9uFuvZ7vZ8e6UxPNSRChmYkLw5KW7b5eYfut9m9drgG1XFPNcm7pSqrqdBOHfHnX17Xppx7WK2SUyAqtCNbYUXfsaqaAogpK7FkFX3w574nXdV6+SKi72NTIo4OuDO1m1KBHR5p33DRUM0qUdmDUQg5fGd/ZtfevmCiCOQS5mQ1vFtkCMQrMnW97ZF0Zvsj0wrDAMcG4Mas+zgNaAmK7rzqHZk1nc3RfYNTdvB9VhKFUAfl9GJCi77sgAiCGoUmGikGnfVMlxHSkPo1POlzVG3AUQC8CFqZFKXwIZ3Mc5UQeAbN5WBPjfLmVQ3+KWTKop8uDak3uk1Bel1TfhU0AprSx/tGx49R93iRAJ7GukaSGFOVPsS1mp990yirVCbdJzTffVOraP+wUTH2RjXxO7CdXKTZVBHGOL/dvLw8P9di0clUAzcCrJmGCarHZfd4ftdjebLFLc1dfEC4LeGNW+p00Wso8F6963QoZEArDL3GXHjFgYlDf+6yAJpOw2TKnvrUgpph5CAatWLGOjuaHfIg3EhBZ2/6O3FqRDzAynBHKL1cvWru1kDK0ZX2OlvjcjDVQQ5Ld7t99h0/X+mwCk3jaG44ZC6rsHgEObNNvlgZBMc+NyaJ+iR3SD/dP1NltHmq47ND+QaM6//A/23wRi/B+qfW9Haj9NIOyUDOF5dTxNzfcc12PCn2gIX1/Ht6mpaYEwR0oHoUvbSU27WQ8cOMrh75nU84KACb94IH5OO6nn09b3xNpEw/BaO3xapOXt1yNzbCAYxCkQq/mzi3gggiiIqYrEg1p45B0NJT7QET24qCBPAUzVjCYZjpJRAmI8GidzwoX8bWkS1XWjSTwck6ECxJLttxz35yw4Z3gCprYa65qwATkAnUAMl3KvdmHYEP2uZmJ/cf2I/Y3ITAVVJmVf4gB0g6sLxt+i4tlbO+fdQKyqV57nMQRqcDnY/sEGBbU6gVg9k+lvAPwyld23n+NgUM+r42mCE+wfYX3WmJeXhEXUfpXm75EITnvYRlWtxcpOe54nNiRd2k6CU7KXsv8XG1RZrj4Pbm8KtcimDDG/mNeHPVKqATmPB+DYaJFNOSyPqJTWVXq1CdJJCRsCCaeQZ20aXdc0lSqLfrdn1g2SbBZzdDY6fsyKXtJDHAxi5HpiNm+f+x7lRofMi7lV9ywwLjNyO7Jt/9xFpo1jXErpOtLBaBUtsm2PbCbU0KSUJjfBvar9/sjWXNxteWI628yyaHkVlzkMgcQtxYcqbZbZGINFKwMgEbyuH2iPY42Us6GRqNkPKrXnZXhrMGU7I9ayUcWp/awGYBSsDIqAKV0rt14XiOLbgykrICZDXmnDZshZO6ZDAVMOZsQmcE2791WeWTcI22cXwMzXPkTLfRlgfx/WKWKx2Tr6wZFhyGWVAM4RpclyOplM1uvJUny5YcQIP5891xD4n5L/AWIP9uzyoSuKAAAAAElFTkSuQmCC" width="25px" height="20px">
+
+
+        </div>
+
+        <div class="formula-editor formula-input" contenteditable="true">   </div>
+
+
+    </div>
+
+
+    <div class="data-container">
+
+<div class="container-2">
+    <div class=" data select-all"></div>
+    <div class=" data column-name-container"></div>
+
+
+</div>
+           
+       
+        <div class=" data row-name-container"></div>
+        <div class=" data input-cell-container"></div>
+
+    </div>
+
+
+
+    <div class="sheet-bar"> 
+
+        <div class="scroller">
+            <div class="material-icons menu-icon"> chevron_left </div>
+            <div class="material-icons menu-icon"> chevron_right </div>
+        </div>
+
+        <div class="material-icons menu-icon">  add_circle_outline </div>
+
+        <div class="sheet-tab-container">
+            <div class="sheet-tab selected">Sheet 1</div>
+           
+        </div>
+
+    </div>
+
+</div>
+
+    ><script src="main.js"></script>
+</body>
+</html>
